@@ -4,14 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Happy 15 Months Anniversary Wifey!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       min-height: 100vh;
       font-family: 'Poppins', Arial, sans-serif;
-      /* Beautiful rose background image from Unsplash */
-      background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4QBsRXhpZgAATU0AKgAAAAgAAwESAAMAAAABAAEAAIdpAAQAAAABAAAAYgAAAABHb29nbGUAAAABAAAAPYdpAAQAAAABAAAAYgAAAAD/2wBDAAICAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGBggLCQcHBwcHBwoKCgoKCgoMDAsMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAALCAFyARcBAREA/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUGB//EACQQAAIBAwQBBQAAAAAAAAAAAAECAwQFERIABgcSISJBUXEy/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EACkRAAICAQMCBQUBAAAAAAAAAAABAhEDBBIhMRMkQUITIWFwFTERQnGh/9oADAMBAAIRAxEAPwDUzN14lrWI6xAqwCNQy3ccVCFyr0iLQpo0DL5FlFlDsZp7n2VSb+EdHdnKpWNxNyRUQrZECwYjB7AMpT9jS1VPR9WqI4uqcuUK1XtPkkEuperrchbfmYaQeLUxn2vJKQjuyLQyfMCecKqN2/3SS+9I6L4pqSt2PlT3CmQTliQSkA29vJwe5pHYidxgJIUZXB3F95FL3fIvP+hHbcTCHUjr0Iyf5V6hRsWeyfbEshItdalOIVbQHEzAhxfLFUSG1pUa9NmVHbZMvR+ZHzzPcoMjv3ZKU6+Pu2R7rlkEnuGqbZcy+SXMakfheq0lXMGVG3DtFzI6eFY18ZkKNT+P3aXLFlZRJqVKC6iFTmEq5cWPFnsBHT2YJFMmvGnVq2YsWGjQuVUossHCqVyZPY/pyoqLURG7USzy03FplkPUU+HcWvO4dL+xP+ptP/Bb1IcdK8U9av/NZTtv97/9k=') no-repeat center center fixed;
       background-size: cover;
     }
     #outside, #inside {
@@ -123,10 +122,10 @@
     }
     function createPopperBlast() {
       const colors = ['#ed5286', '#ffb6c1', '#ffe6e6', '#f6d365', '#fda085', '#d9777a', '#ffffff'];
-      for(let i=0; i<36; i++) {
+      for(let i = 0; i < 36; i++) {
         const popper = document.createElement('div');
         popper.className = 'popper';
-        popper.style.background = colors[Math.floor(Math.random()*colors.length)];
+        popper.style.background = colors[Math.floor(Math.random() * colors.length)];
         popper.style.left = Math.random() * window.innerWidth + 'px';
         popper.style.top = Math.random() * window.innerHeight + 'px';
         popper.style.animation = 'blast 1.2s ease forwards';
