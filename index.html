@@ -4,151 +4,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Happy 15 Months Anniversary Wifey!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(135deg, #ffe6f2 0%, #e3ffe6 100%);
-      font-family: 'Segoe UI', 'Arial', sans-serif;
       margin: 0;
       min-height: 100vh;
-      text-align: center;
-      padding-top: 40px;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
     }
-
     #outside, #inside {
-      margin: auto;
-      max-width: 400px;
+      margin: 3vh auto 0 auto;
+      max-width: 440px;
+      background: rgba(255,255,255,0.90);
+      border-radius: 24px;
+      box-shadow: 0 8px 40px #d9777a66;
+      text-align: center;
+      padding: 26px 9vw 26px 9vw;
     }
-
     #outside-title, #inside-title {
-      font-size: 2em;
-      font-weight: bold;
-      color: #ed5286;
-      margin-bottom: 15px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.4em;
+      color: #d9777a;
+      margin-bottom: 14px;
+      text-shadow: 0 2px 8px #ed528677;
+      letter-spacing: 2px;
     }
-
     #outside-pic {
-      width: 60vw;
-      max-width: 320px;
+      width: 71%;
       border-radius: 18px;
       box-shadow: 0 4px 24px #ed528688;
-      margin-bottom: 15px;
+      margin-bottom: 17px;
     }
-
     .photos {
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
-
     .card-img {
-      width: 30vw;
-      max-width: 120px;
-      margin: 10px 5px;
-      border-radius: 14px;
-      box-shadow: 0 2px 12px #ed528644;
+      width: 40%;
+      margin: 8px 4px;
+      border-radius: 16px;
+      box-shadow: 0 2px 18px #ed528644;
       display: inline-block;
-      vertical-align: middle;
       animation: gentleBounce 2s infinite ease-in-out;
     }
-
     button {
-      background: #ed5286;
+      background: linear-gradient(90deg,#fda085,#f6d365);
       color: #fff;
-      font-size: 1.1em;
-      padding: 10px 24px;
+      font-family: 'Poppins',Arial,sans-serif;
+      font-size: 1.15em;
+      font-weight: 600;
+      padding: 11px 27px;
       border: none;
-      border-radius: 7px;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background 0.24s;
+      margin-top: 15px;
+      box-shadow: 0 2px 10px #ed528688;
+      transition: background .2s, transform .18s;
     }
-    button:hover { background: #c2325e; }
-
-    @keyframes giftTouch {
-      0%, 100% { color: #ed5286; transform: scale(1); }
-      50% { color: #ffb6c1; transform: scale(1.2); }
+    button:hover { background: linear-gradient(90deg,#f6d365,#fda085); transform: scale(1.08); }
+    .happy-text {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.6em;
+      color: #c03267;
+      padding: 18px 0 0 0;
+      line-height: 1.6em;
+      text-align: center;
+      text-shadow: 0 2px 8px #f5b5c1;
+      letter-spacing: .8px;
     }
-
-    .happy-text span, .happy-text b, .happy-text em {
-      display: inline-block;
-      transition: transform 0.3s, color 0.3s;
-      cursor: pointer;
-    }
-    .happy-text span:hover, .happy-text b:hover, .happy-text em:hover {
-      animation: giftTouch 0.6s;
-    }
-
     @keyframes gentleBounce {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-8px); }
     }
-
     @keyframes blast {
       0% { transform: translateY(0) scale(1); opacity: 1; }
-      100% { transform: translateY(-100px) scale(0); opacity: 0; }
+      100% { transform: translateY(-120px) scale(0.4); opacity: 0; }
+    }
+    /* Confetti popper dots */
+    .popper {
+      position: fixed;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      z-index: 1000;
     }
   </style>
 </head>
-
 <body>
   <div id="outside">
-    <p id="outside-title">
+    <div id="outside-title">
       Happy 15 Months Anniversary, Wifey!
-    </p>
+    </div>
     <img id="outside-pic" src="Snapchat-1779909364.jpg" alt="Anniversary Celebration" />
-    <p>
-      <button onclick="open_card()">Open The Card!!!</button>
-    </p>
+    <button onclick="open_card()">Open The Card!!</button>
   </div>
-
-  <div id="inside" style="display: none;">
-    <p id="inside-title">
+  <div id="inside" style="display:none;">
+    <div id="inside-title">
       15 Months of Magic Together
-    </p>
+    </div>
     <div class="photos">
       <img src="Snapchat-1639729430.jpg" alt="Wifey in Saree" class="card-img"/>
       <img src="Snapchat-1090781517.jpg" alt="Holding Hands" class="card-img"/>
     </div>
-    <p id="message" class="happy-text" style="font-size: 1.2em; font-weight: 600; line-height: 1.5em;">
-      Wishing you a happy 15 months anniversary, my lovely wifey!<br /><br />
-      Every moment with you has been a beautiful journey filled with love, laughter, and endless happiness.<br />
-      You are my sunshine and my strength, and I cherish every smile and every memory we create together.<br /><br />
-      Here’s to many more months and years of love, joy, and togetherness.<br />
+    <div id="message" class="happy-text">
+      Wishing you a happy 15 months anniversary, my lovely wifey!<br>
+      Every moment with you is a beautiful journey full of love, laughter, and endless happiness.<br>
+      You are my sunshine, my strength, and the joy in my heart.<br>
+      I cherish every smile and memory we share together.<br>
+      Here’s to many more months and years of love, joy, and togetherness.<br>
       Love you forever and always 🤍
-    </p>
+    </div>
   </div>
-
   <script>
     function open_card() {
       document.getElementById('outside').style.display = 'none';
       document.getElementById('inside').style.display = 'block';
       createPopperBlast();
     }
-
     function createPopperBlast() {
-      const colors = ['#ed5286', '#fff4f4', '#ffe6e6', '#ffb6c1'];
-      for(let i=0; i<30; i++) {
+      const colors = ['#ed5286', '#ffb6c1', '#ffe6e6', '#f6d365', '#fda085', '#d9777a', '#ffffff'];
+      for(let i=0; i<36; i++) {
         const popper = document.createElement('div');
-        popper.style.position = 'fixed';
-        popper.style.width = '11px';
-        popper.style.height = '11px';
+        popper.className = 'popper';
         popper.style.background = colors[Math.floor(Math.random()*colors.length)];
-        popper.style.borderRadius = '50%';
         popper.style.left = Math.random() * window.innerWidth + 'px';
         popper.style.top = Math.random() * window.innerHeight + 'px';
-        popper.style.animation = 'blast 1s ease forwards';
+        popper.style.animation = 'blast 1.2s ease forwards';
         document.body.appendChild(popper);
         popper.addEventListener('animationend', () => popper.remove());
       }
     }
-
-    // Make message letters interactive (pop on hover)
-    document.addEventListener('DOMContentLoaded', () => {
-      const msg = document.getElementById('message');
-      if (msg) {
-        const text = msg.innerHTML;
-        msg.innerHTML = Array.from(text).map(char => 
-          char === ' ' ? ' ' : `<span>${char}</span>`
-        ).join('');
-      }
-    });
   </script>
 </body>
 </html>
